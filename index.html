@@ -1,0 +1,87 @@
+<html>
+	<head>
+		<title>Joshkunz</title>
+		
+		<link type="text/css" rel="stylesheet" media="screen" href="css/style.css" />
+		
+		<!--Templates-->
+		<script id="tweet-template" type="text/x-jquery-tmpl">
+        <div class="tweet">
+            <p id="text">{{html text}}</p>
+			<a id="author" href="http://twitter.com/${tweeted_by}">${tweeted_by}</a>
+        </div>
+        </script>
+		
+		<!--Load jQuery-->
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+		<!--Load .tmpl-->
+		<script type="text/javascript" src="http://ajax.microsoft.com/ajax/jquery.templates/beta1/jquery.tmpl.min.js"></script>
+		<script type="text/javascript" src="js/page.js"></script>
+	</head>
+	
+	<body>
+		<div id="main" class="container">
+			<div id="header" class="container">
+				<h1 class="header">Joshkunz.com</h1>
+			</div>
+			<div id="header-spacer"></div>
+			<div id="center-content">
+				<div id="content" class="container">
+					<div id="stuff" class="container">
+						<h1 class="heading">Recently on the homefront</h1>
+						<p>So since my blog looked so terrible I decided to try and give it a facelift, below is the wip
+						of what I have achived. So hopefully it is much better.</p>
+					</div>
+					<div id="tweets" class="container">
+						<h1 class="heading">Recent Tweets</h1>
+					</div>
+					<div id="projects" class="container projects">
+						<h1 class="heading">My Projects</h1>
+						<div id="pychannel" class="project">
+							<h2 id="title">PyChannel</h2>
+							<p>PyChannel is a python implementation of a generic imageboard software
+							like Futaba channel  (think 4chan) geared toward ease of use, and a small code base.
+							It is <i>very</i> basic.</p>
+							<div class="links">
+								<a href="http://github.com/Joshkunz/PyChannel">Clone it from github</a>
+								<a href="http://pychannel.joshkunz.com">See it in action</a>
+								<a href="#">Check out the documentation</a>
+							</div>
+						</div>
+						<div id="feedr" class="project">
+							<h2 id="title">Feedr (unoffical)</h2>
+							<p>My expeirment in oauth and front end design, I am really not the best at front end work
+							so check it out at your own peril.</p>
+							<div class="links">
+								<a href="http://twitter.joshkunz.com">See it in action</a>
+							</div>
+						</div>
+					</div>
+					<div id="favorite-projects" class="container projects">
+						<h1 class="heading">Favorite Projects</h1>
+						<div id="flask" class="project">
+							<h2 id="title">Flask</h2>
+							<p>By far the best python web framework out there. Simple yet powerful and built on the
+							wonderful <a href="http://werkzeug.pocoo.org">Werkzeug WSGI framework</a> and has the also
+							amazing <a href="http://jinja.pocoo.org">jinja templating</a> rolled right in.</p>
+							<div class="links">
+								<a href="http://flask.pocoo.org">Check it out</a>
+								<a href="https://tryflask.ep.io/">Try it out</a>
+								<a href="http://flask.pocoo.org/docs">Read the documentation</a>
+							</div>
+						</div>
+						<div id="sphinx" class="project">
+							<h2 id="title">Sphinx</h2>
+							<p>The very best in documentation generators, thanks in part to the default python support
+							rolled right in. Very powerful and very easy to use, highly reccomended</p>
+							<div class="links">
+								<a href="http://sphinx.pocoo.org">Check it out</a>
+								<a href="http://sphinx.pocoo.org/docs">Read the docs</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
