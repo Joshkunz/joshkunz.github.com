@@ -34,6 +34,7 @@ $(document).ready(function () {
 		dataType: "jsonp",
 		success: function (tweets) {
 			$.each(tweets, function (tweets_index, tweet) {$("#tweet-template").tmpl(format_tweet(tweet)).appendTo("#tweets");});
+			$("#tweets").show(500);
 		}
 	});
 	
