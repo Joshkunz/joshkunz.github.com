@@ -185,3 +185,30 @@ h1.heading {
 }
 
 }
+
+@media handheld and (max-device-width: 320px) {
+	
+#header .nav-links {
+	list-style: none;
+}
+
+#header.container h1 {
+	padding-left: 10px;
+}
+
+#header .media-links {
+	list-style: none
+}
+
+#header .media-links li {
+	display: inline-block;
+	padding-right: 7px;
+}
+
+#center-content {
+	margin-left: 0px;
+	margin-right: 0px;
+	width: 100%;
+}
+	
+}
