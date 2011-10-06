@@ -12,7 +12,7 @@ function format_tweet (tweet) {
 	
 	//Find hash-tags
 	tweet_text = tweet_text.replace(/#\S*\b/g, function (match_string) {
-		return("<a href=\"#\" class=\"hash-tag\">"+match_string+"</a>");
+		return("<a href=\"http://twitter.com/#/!search/"+match_string+"\">"+match_string+"</a>");
 	});
     
 	//find user info
@@ -36,10 +36,24 @@ function decorate_links() {
 	$("a").each(function (index) {
 		if ($(this).attr("href")[0] == "#" && $(this).attr("href").length > 1) {
 			$(this).click(function () {
-				$($(this).attr("href")).scrollToElement(250, $("#header.container").height()+10);
+				if ($("#header.container").css("position") == "fixed") {
+					$($(this).attr("href")).scrollToElement(250, $("#header.container").height()+10);
+				} else {
+					$($(this).attr("href")).scrollToElement(250, 0);
+				}
 			});
 		}
 	});
+}
+
+function check_resize() {
+	if ($(window).width() <=700) {
+		if ($("ol.media-links").prev().attr("class") == "nav-links")
+			{$("ol.media-links").insertBefore($("ol.nav-links"));}
+	} else if ($(window).width() > 700) {
+		if ($("ol.nav-links").prev().attr("class") == "media-links")
+			{$("ol.nav-links").insertBefore($("ol.media-links"));}
+	}
 }
 
 $(document).ready(function () {
@@ -47,17 +61,20 @@ $(document).ready(function () {
 	
 	//Decorate the in-page links to use smooth scrolling
 	decorate_links();
+	check_resize();
+	
+	$(window).resize(check_resize);
 	
 	//load 3 most recent tweets
-	//$.ajax({
-	//	url: "https://api.twitter.com/1/statuses/user_timeline.json?include_rts=true&screen_name=Joshkunz&count=3",
-	//	type: "GET",
-	//	dataType: "jsonp",
-	//	success: function (tweets) {
-	//		$.each(tweets, function (tweets_index, tweet) {$("#tweet-template").tmpl(format_tweet(tweet)).appendTo("#tweets");});
-	//		$("#tweets").show(500);
-	//	}
-	//});
+	$.ajax({
+		url: "https://api.twitter.com/1/statuses/user_timeline.json?include_rts=true&screen_name=Joshkunz&count=3",
+		type: "GET",
+		dataType: "jsonp",
+		success: function (tweets) {
+			$.each(tweets, function (tweets_index, tweet) {$("#tweet-template").tmpl(format_tweet(tweet)).appendTo("#tweets");});
+			$("#tweets").show(500);
+		}
+	});
 	
 	
 });

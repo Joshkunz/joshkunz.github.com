@@ -79,7 +79,7 @@ h1.heading {
 	display: none;
 }
 
-@media screen and (min-width: 700px ){
+@media screen and (min-width: 321px ){
 
 #header.container {
 	border-bottom: 2px solid black;
@@ -154,61 +154,52 @@ h1.heading {
 	
 	display: inline-block;
 	
-	border-right: 1px dashed black;
+/*	border-right: 1px dashed black;*/
 }
 
 }
 
-@media screen and (max-width: 700px) {
-
-#header .nav-links {
-	list-style: none;
-}
+@media only screen and (max-width: 320px) {
 
 #header.container h1 {
 	padding-left: 10px;
+	float: left;
 }
 
-#header .media-links {
-	list-style: none
-}
-
-#header .media-links li {
-	display: inline-block;
-	padding-right: 7px;
-}
-
-#center-content {
-	margin-left: 0px;
-	margin-right: 0px;
-	width: 100%;
-}
-
-}
-
-@media handheld {
+#header .nav-links {
+	clear: both;
+	list-style: none;
+	border: 2px solid black;
 	
-#header .nav-links {
-	list-style: none;
-}
-
-#header.container h1 {
-	padding-left: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	
+	margin-left: 20px;
+	margin-right: 20px;
 }
 
 #header .media-links {
-	list-style: none
+	list-style: none;
+	float: left;
+	padding-left: 15px;
+	padding-top: 7px;
 }
 
 #header .media-links li {
 	display: inline-block;
-	padding-right: 7px;
+	padding-right: 2px;
+}
+
+#header .media-links li a {
+	border: none;
 }
 
 #center-content {
 	margin-left: 0px;
 	margin-right: 0px;
 	width: 100%;
+}
+
 }
 	
 }
