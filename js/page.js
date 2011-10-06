@@ -25,18 +25,39 @@ function format_tweet (tweet) {
 	return {"text": tweet_text, "tweeted_by": twb}
 }
 
-$(document).ready(function () {
-	
-	//load 3 most recent tweets
-	$.ajax({
-		url: "https://api.twitter.com/1/statuses/user_timeline.json?include_rts=true&screen_name=Joshkunz&count=3",
-		type: "GET",
-		dataType: "jsonp",
-		success: function (tweets) {
-			$.each(tweets, function (tweets_index, tweet) {$("#tweet-template").tmpl(format_tweet(tweet)).appendTo("#tweets");});
-			$("#tweets").show(500);
+(function ($) {
+	$.fn.scrollToElement = function (speed, offset) {
+		console.log("Running Scroll to:", $(this));
+		$("body").animate({scrollTop: $(this).offset().top-offset}, speed);
+	}
+})(jQuery);
+
+function decorate_links() {
+	$("a").each(function (index) {
+		if ($(this).attr("href")[0] == "#" && $(this).attr("href").length > 1) {
+			$(this).click(function () {
+				$($(this).attr("href")).scrollToElement(250, $("#header.container").height()+10);
+			});
 		}
 	});
+}
+
+$(document).ready(function () {
+	
+	
+	//Decorate the in-page links to use smooth scrolling
+	decorate_links();
+	
+	//load 3 most recent tweets
+	//$.ajax({
+	//	url: "https://api.twitter.com/1/statuses/user_timeline.json?include_rts=true&screen_name=Joshkunz&count=3",
+	//	type: "GET",
+	//	dataType: "jsonp",
+	//	success: function (tweets) {
+	//		$.each(tweets, function (tweets_index, tweet) {$("#tweet-template").tmpl(format_tweet(tweet)).appendTo("#tweets");});
+	//		$("#tweets").show(500);
+	//	}
+	//});
 	
 	
 });
