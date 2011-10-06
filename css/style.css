@@ -186,7 +186,7 @@ h1.heading {
 
 }
 
-@media handheld and (max-device-width: 320px) {
+@media handheld {
 	
 #header .nav-links {
 	list-style: none;
