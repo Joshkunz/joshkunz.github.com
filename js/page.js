@@ -39,7 +39,7 @@ function decorate_links() {
 				if ($("#header.container").css("position") == "fixed") {
 					$($(this).attr("href")).scrollToElement(250, $("#header.container").height()+10);
 				} else {
-					$($(this).attr("href")).scrollToElement(250, 0);
+					$($(this).attr("href")).scrollToElement(250, 5);
 				}
 			});
 		}
