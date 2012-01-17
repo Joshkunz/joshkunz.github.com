@@ -1,113 +1,126 @@
 <html>
 	<head>
 		<title>Joshkunz</title>
-		<!--	The meta thing below is for iPhones	-->
+		<!-- The meta thing below is for iPhones	-->
 		<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
 		
 		<!--Css-->
 		<link type="text/css" rel="stylesheet" href="css/style.css" />
-		
-		<!--Templates-->
-		<script id="tweet-template" type="text/x-jquery-tmpl">
-        <div class="tweet">
-            <p id="text">{{html text}}</p>
-        </div>
-        </script>
+		<link type="text/css" rel="stylesheet" href="css/prettify.css" />
+		<style type="text/css">
+		body {
+			padding-top: 60px;
+		}
+		</style>
 		
 		<!--Load jQuery-->
 		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
-		<!--Load .tmpl-->
-		<script type="text/javascript" src="http://ajax.microsoft.com/ajax/jquery.templates/beta1/jquery.tmpl.min.js"></script>
+		
+		<!--Load templating-->
+		<script type="text/javascript" src="js/jquery.mustache.js"></script>
+		
+		<!--	prettify	-->
+		<script type="text/javascript" src="js/google-code-prettify/prettify.js"></script>
+		
+		<!--Page Script-->
 		<script type="text/javascript" src="js/page.js"></script>
+		
 	</head>
 	
 	<body>
-		<div id="main" class="container">
-			<div id="header" class="container">
-				<h1 class="header">Joshkunz</h1>
-				<ol class="nav-links">
-					<li><a href="#projects">Projects</a></li>
-					<li><a href="#favorite-projects">Favorite Projects</a></li>
-				</ol>
-				<ol class="media-links">
-					<li><a href="http://www.twitter.com/Joshkunz">
-						<img src="http://twitter-badges.s3.amazonaws.com/t_logo-a.png" alt="Follow Joshkunz on Twitter"/></a>
-					</li>
-					<li><a href="https://plus.google.com/118442981003737586376">
-						<img src="images/g-plus-icon-36x36.png" alt="Find Joshkunz on google+"/></a>
-					</li>
-					<li><a href="https://github.com/Joshkunz">
-						<img src="images/github_icon.png" alt="Find Joshkunz on github"/></a>
-					</li>
-				</ol>
-			</div>
-			<div id="header-spacer"></div>
-			<div id="center-content">
-				<div id="content" class="container">
-					<div id="stuff" class="container">
-						<h1 class="heading">Recently on the homefront</h1>
-						<p>So since my blog looked so terrible I decided to try and give it a facelift, below is the wip
-						of what I have achived. So hopefully it is much better.</p>
-					</div>
-					<div id="tweets" class="container">
-						<h1 class="heading">Recent Tweets</h1>
-					</div>
-					<div id="projects" class="container projects">
-						<h1 class="heading">My Projects</h1>
-						<div id="pychannel" class="project">
-							<h2 id="title">PyChannel</h2>
-							<p>PyChannel is a python implementation of a generic imageboard software
-							like Futaba channel  (think 4chan) geared toward ease of use, and a small code base.
-							It is <i>very</i> basic.</p>
-							<ol class="links">
-								<li><a href="http://github.com/Joshkunz/PyChannel">Clone it from github</a></li>
-								<li><a href="http://pychannel.joshkunz.com">See it in action</a></li>
-								<li><a href="#">Check out the documentation</a></li>
-							</ol>
-						</div>
-						<div id="mScrape" class="project">
-							<h1 id="title">mScrape</h1>
-							<p>A multi-processed asyncronus framework for scraping the web with a simple
-							modular design and the excellent
-							<a href="http://www.crummy.com/software/BeautifulSoup/">Beautiful Soup</a>
-							library for html parsing.</p>
-							<ol class="links">
-								<li><a href="http://github.com/Joshkunz/mScrape">Clone it from github</a></li>
-							</ol>
-						</div>
-						<div id="feedr" class="project">
-							<h2 id="title">Feedr (unoffical)</h2>
-							<p>My expeirment in oauth and front end design, I am really not the best at front end work
-							so check it out at your own peril.</p>
-							<ol class="links">
-								<li><a href="http://twitter.joshkunz.com">See it in action</a></li>
-							</ol>
-						</div>
-					</div>
-					<div id="favorite-projects" class="container projects">
-						<h1 class="heading">Favorite Projects</h1>
-						<div id="flask" class="project">
-							<h2 id="title">Flask</h2>
-							<p>By far the best python web framework out there. Simple yet powerful and built on the
-							wonderful <a href="http://werkzeug.pocoo.org">Werkzeug WSGI framework</a> and has the also
-							amazing <a href="http://jinja.pocoo.org">jinja templating</a> rolled right in.</p>
-							<ol class="links">
-								<li><a href="http://flask.pocoo.org">Check it out</a></li>
-								<li><a href="https://tryflask.ep.io/">Try it out</a></li>
-								<li><a href="http://flask.pocoo.org/docs">Read the documentation</a></li>
-							</ol>
-						</div>
-						<div id="sphinx" class="project">
-							<h2 id="title">Sphinx</h2>
-							<p>The very best in documentation generators, thanks in part to the default python support
-							built right in. Very powerful and very easy to use, highly reccomended</p>
-							<ol class="links">
-								<li><a href="http://sphinx.pocoo.org">Check it out</a></li>
-							</ol>
-						</div>
-					</div>
+		<div class="topbar">
+			<div class="fill">
+				<div class="container">
+					<a href="#" class="brand">Joshkunz</a>
+					<ul class="nav">
+						<li><a href="#projects">Projects</a></li>
+						<li><a href="#favorite-projects">Favorite Projects</a></li>
+						<li><a href="http://blog.joshkunz.com">Blog</a></li>
+					</ul>
 				</div>
 			</div>
+		</div>
+		
+		<div class="container">
+			
+			<!--	Tweets		-->
+			<div id="tweets" class="page-header">
+				<h1>Tweets</h1>
+			</div>
+			
+			<div id="tweets-container" class="row">
+			</div>
+			
+			<!-- Projects -->
+			<div id="projects" class="page-header">
+				<h1>Projects</h1>
+			</div>
+			
+			<div class="row">
+				<div id="pychannel" class="project span16">
+					<h2>PyChannel</h2>
+					<p>A basic image board writting in pure-python backed by <a href="redis.io">redis</a>.
+					Mostly, it is the product of my boredom, curiousity, and disappointment in the
+					selection of webapps written in python. It has some cool stuff like an signal-driven
+					(hopefully) extendable plugin engine using <a href="http://discorporate.us/projects/Blinker/">Blinker</a>.
+					<ul class="unstyled links">
+						<li><a href="http://github.com/Joshkunz/PyChannel">Clone it from github</a></li>
+						<li><a href="http://pychannel.joshkunz.com">See it in action</a></li>
+						<li><a href="http://docs.joshkunz.com/pychannel">Read the docs</a></li>
+					</ul>
+				</div>
+				
+				<div id="feedr" class="project span8">
+					<h2>feedr</h2>
+					<p>My experiments in OAuth and front end design. I'm not amazingly good at front end
+					(this website is almost entirely from twitter's bootstrap library) so, beware. It also used
+					some cool (at the time I wrote it) ajax and javascript template rendering.</p>
+					<ul class="unstyled links">
+						<li><a href="http://twitter.joshkunz.com">See it in action</a></li>
+					</ul>
+				</div>
+				
+				<div id="mScrape" class="project span8">
+					<h2>mScrape</h2>
+					<p>Multiprocessed python spider/web scraping framework using tornado for
+					asyncronus network IO.</p>
+					<ul class="unstyled links">
+						<li><a href="http://github.com/Joshkunz/mScrape">Clone it on github</a></li>
+					</ul>
+				</div>
+				
+			</div>
+			
+			<!-- Favorite Projects -->
+			<div id="favorite-projects" class="page-header">
+				<h1>Favorite Projects</h1>
+			</div>
+			
+			<div class="row">
+				<div id="pocoo" class="project span8">
+					<h2>Anything <a href="pocoo.org">Pocoo</a></h2>
+					<p>The team behind some of the most popular (and useful) python libraries:
+					<a href="flask.pocoo.org">flask</a>, <a href="werkzeug.pocoo.org">werkzeug</a>,
+					and the <a href="sphinx.pocoo.org">Sphinx documentation generator</a>. The list
+					goes on. <a href="pygmentize.pocoo.org">pygmentize</a> for example.</p>
+					<ul class="unstyled links">
+						<li><a href="pocoo.org">Pocoo</a></li>
+					</ul>
+				</div>
+				
+				<div id="coffee-script" class="project span8">
+					<h2>Coffee Script</h2>
+					<p>My second favorite programming language. The new web 2.0-y javascript alternative.
+					A powerful language with an extremely beautiful syntax that actually makes writing
+					javascript an enjoyable experince.</p>
+					<ul class="unstyled links">
+						<li><a href="http://coffescript.org">Coffee Script</a></li>
+						<li><a href="http://github.com/jashkenas/coffee-script">Check it out on github</a></li>
+					</ul>
+				</div>
+				
+			</div>
+				
 		</div>
 	</body>
 </html>
