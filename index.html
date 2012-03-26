@@ -3,6 +3,18 @@
 		<title>Joshkunz</title>
 		<!-- The meta thing below is for iPhones	-->
 		<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+
+		<!-- Google analytics, I'm curious :)-->
+		<script type="text/javascript">
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-29093321-1']);
+		_gaq.push(['_trackPageview']);
+		(function() {
+		 var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		 ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		 var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		 })();
+		</script>
 		
 		<!--Css-->
 		<link type="text/css" rel="stylesheet" href="css/style.css" />
@@ -28,6 +40,7 @@
 	</head>
 	
 	<body>
+<<<<<<< HEAD
 		<div class="topbar">
 			<div class="fill">
 				<div class="container">
@@ -117,6 +130,91 @@
 						<li><a href="http://coffescript.org">Coffee Script</a></li>
 						<li><a href="http://github.com/jashkenas/coffee-script">Check it out on github</a></li>
 					</ul>
+=======
+		<div id="main" class="container">
+			<div id="header" class="container">
+				<h1 class="header">Joshkunz</h1>
+				<ol class="nav-links">
+					<li><a href="#projects">Projects</a></li>
+					<li><a href="#favorite-projects">Favorite Projects</a></li>
+					<li><a href="http://blog.joshkunz.com">Blog</a></li>
+				</ol>
+				<ol class="media-links">
+					<li><a href="http://twitter.joshkunz.com">
+						<img src="images/icons/twitter.png" alt="Twitter"/></a>
+					</li>
+					<li><a href="http://gplus.joshkunz.com">
+						<img src="images/icons/gplus.png" alt="Google+"/></a>
+					</li>
+					<li><a href="http://github.joshkunz.com">
+						<img src="images/icons/github.png" alt="Github"/></a>
+					</li>
+					<li><a href="http://steam.joshkunz.com">
+						<img src="images/icons/steam.png" alt="Steam"/></a>
+					</li>
+				</ol>
+			</div>
+			<div id="header-spacer"></div>
+			<div id="center-content">
+				<div id="content" class="container">
+					<div id="tweets" class="container">
+						<h1 class="heading">Recent Tweets</h1>
+					</div>
+					<div id="projects" class="container projects">
+						<h1 class="heading">My Projects</h1>
+						<div id="pychannel" class="project">
+							<h2 id="title">PyChannel</h2>
+							<p>PyChannel is a python implementation of a generic imageboard software
+							like Futaba channel  (think 4chan) geared toward ease of use, and a small code base.
+							It is <i>very</i> basic.</p>
+							<ol class="links">
+								<li><a href="http://github.com/Joshkunz/PyChannel">Clone it from github</a></li>
+								<li><a href="http://pychannel.joshkunz.com">See it in action</a></li>
+								<li><a href="http://docs.joshkunz.com/pychannel">Check out the documentation</a></li>
+							</ol>
+						</div>
+						<div id="mScrape" class="project">
+							<h1 id="title">mScrape</h1>
+							<p>A multi-processed asyncronus framework for scraping the web with a simple
+							modular design and the excellent
+							<a href="http://www.crummy.com/software/BeautifulSoup/">Beautiful Soup</a>
+							library for html parsing.</p>
+							<ol class="links">
+								<li><a href="http://github.com/Joshkunz/mScrape">Clone it from github</a></li>
+							</ol>
+						</div>
+						<div id="feedr" class="project">
+							<h2 id="title">Feedr (unoffical)</h2>
+							<p>My expeirment in oauth and front end design, I am really not the best at front end work
+							so check it out at your own peril.</p>
+							<ol class="links">
+								<li><a href="http://feedr.joshkunz.com">See it in action</a></li>
+							</ol>
+						</div>
+					</div>
+					<div id="favorite-projects" class="container projects">
+						<h1 class="heading">Favorite Projects</h1>
+						<div id="flask" class="project">
+							<h2 id="title">Flask</h2>
+							<p>By far the best python web framework out there. Simple yet powerful and built on the
+							wonderful <a href="http://werkzeug.pocoo.org">Werkzeug WSGI framework</a> and has the also
+							amazing <a href="http://jinja.pocoo.org">jinja templating</a> rolled right in.</p>
+							<ol class="links">
+								<li><a href="http://flask.pocoo.org">Check it out</a></li>
+								<li><a href="https://tryflask.ep.io/">Try it out</a></li>
+								<li><a href="http://flask.pocoo.org/docs">Read the documentation</a></li>
+							</ol>
+						</div>
+						<div id="sphinx" class="project">
+							<h2 id="title">Sphinx</h2>
+							<p>The very best in documentation generators, thanks in part to the default python support
+							built right in. Very powerful and very easy to use, highly reccomended</p>
+							<ol class="links">
+								<li><a href="http://sphinx.pocoo.org">Check it out</a></li>
+							</ol>
+						</div>
+					</div>
+>>>>>>> a3afa9b7111246cec69559b23182ceb813bb6890
 				</div>
 				
 			</div>
