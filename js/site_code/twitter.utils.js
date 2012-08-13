@@ -8,7 +8,7 @@
     b_at = Date.parse(b.created_at);
     if (a_at > b_at) {
       return -1;
-    } else if (b_at > a_at) {
+    } else if (b_at < a_at) {
       return 1;
     } else {
       return 0;
@@ -32,10 +32,10 @@
     }
     return $.ajax({
       url: "http://api.twitter.com/1/statuses/user_timeline.json",
-      type: "json",
+      type: "jsonp",
       data: args,
       success: function(data) {
-        return update_tweet_list(callback, data, tweets, users, count(since));
+        return update_tweet_list(callback, data, tweets, users, count, since);
       }
     });
   };
@@ -45,13 +45,17 @@
     tweets = oldtweets;
     for (_i = 0, _len = newtweets.length; _i < _len; _i++) {
       tweet = newtweets[_i];
-      Heap.push(tweet, tweets, tweet_cmp);
+      Heap.push(tweets, tweet, tweet_cmp);
     }
-    tweets = Heap.nlargest(tweets, count, tweet_cmp);
-    if (users === []) {
+    tweets = Heap.nsmallest(tweets, count, tweet_cmp);
+    if (users.length === 0) {
       return callback(tweets);
     } else {
-      return fetch_tweets(callback, tweets, users, count, tweets[-1].id);
+      if (tweets.length >= count) {
+        return fetch_tweets(callback, tweets, users, count, tweets[tweets.length - 1].id);
+      } else {
+        return fetch_tweets(callback, tweets, users, count);
+      }
     }
   };
 
@@ -63,7 +67,7 @@
     tweets = [];
     return $.ajax({
       url: "http://api.twitter.com/1/friends/ids.json",
-      type: 'json',
+      type: 'jsonp',
       data: {
         screen_name: username
       },
