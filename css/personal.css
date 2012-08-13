@@ -1,0 +1,19 @@
+p {
+    font-size: 16px;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: blue;
+}
+
+a:hover {
+    text-decoration: underline;
+}
