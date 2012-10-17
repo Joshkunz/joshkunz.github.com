@@ -1,6 +1,7 @@
 #!/bin/sh
 
 FILES="site_code/heap.js 
+site_code/handlebars.js
 site_code/twitter.utils.js 
 site_code/main.js"
 

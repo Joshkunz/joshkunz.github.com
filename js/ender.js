@@ -1,7 +1,7 @@
 /*!
   * =============================================================
   * Ender: open module JavaScript framework (https://ender.no.de)
-  * Build: ender build bonzo qwery domready bean jeesh reqwest
+  * Build: ender build bonzo domready bean qwery jeesh reqwest
   * =============================================================
   */
 
