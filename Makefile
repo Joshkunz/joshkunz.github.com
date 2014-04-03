@@ -10,11 +10,12 @@ music_base = ~/music
 music_site = https://music.joshkunz.com/
 
 macro_base = macros.m4
-generated = index.html music.html
+generated = index.html music.html gifts.html
 
 site: $(generated)
 
 index.html: index.md base.html.m4
+gifts.html: gifts.md base.html.m4
 music.html: $(music_base)
 	$(TREE) $(TREEFLAGS) \
 		-o "$@" -H "$(music_site)" -T "Music Library" $(music_base)
