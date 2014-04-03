@@ -14,7 +14,7 @@ generated = index.html music.html
 
 site: $(generated)
 
-index.html: index.md
+index.html: index.md base.html.m4
 music.html: $(music_base)
 	$(TREE) $(TREEFLAGS) \
 		-o "$@" -H "$(music_site)" -T "Music Library" $(music_base)
