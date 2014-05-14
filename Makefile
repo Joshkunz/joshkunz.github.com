@@ -6,7 +6,12 @@ TREE = tree
 
 TREEFLAGS = -s -h --du
 
-music_base = ~/music
+ifeq ($(shell uname -s),Darwin)
+    music_base = ~/Music/Library
+else
+    music_base = ~/music
+endif
+
 music_site = https://music.joshkunz.com/
 
 macro_base = macros.m4
