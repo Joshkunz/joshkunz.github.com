@@ -12,7 +12,7 @@ else
     music_base = ~/music
 endif
 
-music_site = https://music.joshkunz.com/
+music_site = https://music.joshkunz.com/flac
 
 macro_base = macros.m4
 generated = index.html music.html gifts.html
