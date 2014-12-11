@@ -22,7 +22,7 @@ for books I'm looking to buy (the list is in no particular order):
 
  __$345__ [Fluke 87-V](http://www.amazon.com/dp/B0002YFD1K) Multimeter.
 
- __$250 (each)__ Up to 6 [WD Re Hard Drives](http://www.amazon.com/WD-Enterprise-Hard-Drive-WD4000FYYZ/dp/B0090UEQ8I) (2TB or greater)
+ __$150-$250 (each)__ Up to 6 [WD Re Hard Drives](http://www.amazon.com/WD-Enterprise-Hard-Drive-WD4000FYYZ/dp/B0090UEQ8I) (2TB or greater)
 
 __About $250-$400__ A [rackmount](https://en.wikipedia.org/wiki/19-inch_rack) 
 server chassis with 6-8 hot-swappable bays (4U or less, less is better).
