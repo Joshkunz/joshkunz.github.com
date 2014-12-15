@@ -15,6 +15,9 @@ __$40 - $200__ I also love getting books, I have a separate amazon wish-list
 for books I'm looking to buy (the list is in no particular order): 
 [Books][books].
 
+Lastly, I have an amazon wish-list for random items I want to buy that don't fit under the above categories. Prices range wildly, but they are
+usually $100 or more: [Other][other].
+
 ### Specific Items
 <hr/>
 
@@ -39,6 +42,7 @@ worry about that.
 
   [music]: http://www.amazon.com/gp/registry/wishlist/2X3C22QP5CINI/
   [books]: http://www.amazon.com/gp/registry/wishlist/2M87971CSKYDT/
-  [hardware]: http://www.amazon.com/gp/registry/wishlist/304MFL62Z0V0I/
+  [other]: http://www.amazon.com/gp/registry/wishlist/304MFL62Z0V0I
+
   [scba]: https://en.wikipedia.org/wiki/Self-contained_breathing_apparatus
   [hydro]: https://en.wikipedia.org/wiki/Hydrostatic_test
