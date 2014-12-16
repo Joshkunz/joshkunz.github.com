@@ -20,6 +20,8 @@
 * __[nfsn.py][]__ An authentication helper for the [requests][] library
   that implements the authentication protocol for the [NearlyFreeSpeech.Net][nfsn]
   API.
+* __[pdf2kindle][]__ A command-line tool for uploading academic papers to a
+  kindle. Automatically processes and emails the papers.
 
   [github]: https://github.com/joshkunz
   [pinboard]: https://pinboard.in/u:joshkunz
@@ -33,4 +35,5 @@
   [rss]: http://rss.joshkunz.com/tumblr/dashboard 
   [ashuffle]: https://github.com/Joshkunz/ashuffle
   [nfsn.py]: https://github.com/Joshkunz/nfsn.py
+  [pdf2kindle]: https://github.com/Joshkunz/pdf2kindle
 
