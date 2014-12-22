@@ -22,6 +22,10 @@
   API.
 * __[pdf2kindle][]__ A command-line tool for uploading academic papers to a
   kindle. Automatically processes and emails the papers.
+* __[fpick][]__ A curses-based utility for manually selecting a set of
+  files from a directory. The selection is output as an [rsync][] exclude
+  file, so it is useful for copying sub-sets of files. The readme in the
+  repository has more information.
 
   [github]: https://github.com/joshkunz
   [pinboard]: https://pinboard.in/u:joshkunz
@@ -31,9 +35,11 @@
   [mpd]: http://www.musicpd.org/
   [requests]: http://docs.python-requests.org/en/latest/index.html
   [nfsn]: http://nearlyfreespeech.net/
+  [rsync]: https://rsync.samba.org/
 
   [rss]: http://rss.joshkunz.com/tumblr/dashboard 
   [ashuffle]: https://github.com/Joshkunz/ashuffle
   [nfsn.py]: https://github.com/Joshkunz/nfsn.py
   [pdf2kindle]: https://github.com/Joshkunz/pdf2kindle
+  [fpick]: https://github.com/Joshkunz/fpick
 
