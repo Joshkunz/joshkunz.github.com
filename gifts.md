@@ -21,6 +21,8 @@ $100 or more: [Other][other].
 
 ### Misc Items
 <hr/>
+__$63__ 4Sevens [Quark Pro QPA](http://www.foursevens.com/product_info.php?products_id=3197) flashlight.
+
 __About $250-$400__ A [rackmount](https://en.wikipedia.org/wiki/19-inch_rack) 
 server chassis with 6-8 hot-swappable bays (4U or less, less is better).
 
