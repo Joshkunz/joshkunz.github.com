@@ -26,6 +26,8 @@
   files from a directory. The selection is output as an [rsync][] exclude
   file, so it is useful for copying sub-sets of files. The readme in the
   repository has more information.
+* __[soundrip][]__ A command-line utility for ripping tracks off of 
+  [soundcloud][].
 
   [github]: https://github.com/joshkunz
   [pinboard]: https://pinboard.in/u:joshkunz
@@ -42,4 +44,4 @@
   [nfsn.py]: https://github.com/Joshkunz/nfsn.py
   [pdf2kindle]: https://github.com/Joshkunz/pdf2kindle
   [fpick]: https://github.com/Joshkunz/fpick
-
+  [soundrip]: https://github.com/Joshkunz/soundrip
