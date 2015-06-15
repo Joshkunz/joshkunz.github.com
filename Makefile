@@ -7,7 +7,7 @@ TREE = tree
 TREEFLAGS = -s -h --du
 
 ifeq ($(shell uname -s),Darwin)
-    music_base = ~/Music/Library
+    music_base = ~/music/library
 else
     music_base = ~/music
 endif
