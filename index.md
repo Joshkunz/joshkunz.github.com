@@ -59,6 +59,6 @@
   [soundrip]: https://github.com/Joshkunz/soundrip
 
   [mpd_patch_v19]: https://gist.github.com/Joshkunz/6e922cedb86c76fd1bfe
-  [mod_patch_v17]: https://gist.github.com/Joshkunz/6946483
+  [mpd_patch_v17]: https://gist.github.com/Joshkunz/6946483
 
   [lua-bt]: https://gist.github.com/Joshkunz/b482992056d08f17be93
