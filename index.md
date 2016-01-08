@@ -10,6 +10,7 @@
 * [joshkunz][pinboard] on [Pinboard](https://pinboard.in)
 * [obstack][lastfm] on [last.fm](http://last.fm)
 * [joshkunz][soundcloud] on [soundcloud](https://soundcloud.com)
+* [joshkunz][musicbrainz] on [MusicBrainz](https://musicbrainz.org)
 
 ## Projects of Note 
 
@@ -45,6 +46,7 @@
   [pinboard]: https://pinboard.in/u:joshkunz
   [lastfm]: http://www.last.fm/user/obstack
   [soundcloud]: https://soundcloud.com/joshkunz
+  [musicbrainz]: https://musicbrainz.org/user/Joshkunz
 
   [mpd]: http://www.musicpd.org/
   [requests]: http://docs.python-requests.org/en/latest/index.html
