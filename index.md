@@ -4,15 +4,16 @@
 <div class="clear"></div>
 <div class="prefix_2 grid_8">
 
-## Around the Web
+## On Other Sites 
 
-* [joshkunz][github] on [Github](https://github.com)
-* [joshkunz][pinboard] on [Pinboard](https://pinboard.in)
-* [obstack][lastfm] on [last.fm](http://last.fm)
-* [joshkunz][soundcloud] on [soundcloud](https://soundcloud.com)
-* [joshkunz][musicbrainz] on [MusicBrainz](https://musicbrainz.org)
+[Github][github], 
+[Pinboard][pinboard],
+[last.fm][lastfm],
+[libre.fm][librefm],
+[SoundCloud][soundcloud],
+[MusicBrainz][musicbrainz].
 
-## Projects of Note 
+## Useful Things I've Written
 
 * __[tumblr2rss][rss]__ A utility to convert your tumblr dashboard into an
   RSS feed.
@@ -42,9 +43,12 @@
   To build it, I implemented [bencoding](https://en.wikipedia.org/wiki/Bencode)
   in lua. Find it [here](https://gist.github.com/Joshkunz/4e114cd473c64498af5d).
 
+</div>
+
   [github]: https://github.com/joshkunz
   [pinboard]: https://pinboard.in/u:joshkunz
   [lastfm]: http://www.last.fm/user/obstack
+  [librefm]: http://www.libre.fm/user/obstack
   [soundcloud]: https://soundcloud.com/joshkunz
   [musicbrainz]: https://musicbrainz.org/user/Joshkunz
 
