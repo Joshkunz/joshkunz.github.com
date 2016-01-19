@@ -4,7 +4,12 @@
 <div class="clear"></div>
 <div class="prefix_2 grid_8">
 
-## On Other Sites 
+## On Other Sites
+<div class="section-rant">
+I wanted it to be called "Around the Web" but [my ad blocker][ad-blocker]
+has a heuristic to block sections that have that title, which makes me glad
+and angry at the same time.
+</div>
 
 [Github][github], 
 [Pinboard][pinboard],
@@ -68,3 +73,5 @@
   [mpd_patch_v17]: https://gist.github.com/Joshkunz/6946483
 
   [lua-bt]: https://gist.github.com/Joshkunz/b482992056d08f17be93
+
+  [ad-blocker]: https://github.com/gorhill/uBlock

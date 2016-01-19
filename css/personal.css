@@ -21,3 +21,11 @@ a:visited {
 a:hover {
     text-decoration: underline;
 }
+
+.section-rant p {
+    width: 55%;
+    font-size: 7px;
+    margin-top: -17px;
+    padding-top: 0px;
+    color: grey;
+}
