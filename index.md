@@ -5,11 +5,6 @@
 <div class="prefix_2 grid_8">
 
 ## On Other Sites
-<div class="section-rant">
-I wanted it to be called "Around the Web" but [my ad blocker][ad-blocker]
-has a heuristic to block sections that have that title, which makes me glad
-and angry at the same time.
-</div>
 
 [Github][github], 
 [Pinboard][pinboard],
@@ -17,6 +12,11 @@ and angry at the same time.
 [libre.fm][librefm],
 [SoundCloud][soundcloud],
 [MusicBrainz][musicbrainz].
+
+### With Flux Research Group
+
+I also write some open source software with the [Flux Research Group][flux],
+you can see those projects at the [Flux Group Gitlab][flux-gitlab-me].
 
 ## Useful Things I've Written
 
@@ -75,3 +75,6 @@ and angry at the same time.
   [lua-bt]: https://gist.github.com/Joshkunz/b482992056d08f17be93
 
   [ad-blocker]: https://github.com/gorhill/uBlock
+
+  [flux]: https://www.flux.utah.edu/index
+  [flux-gitlab-me]: https://gitlab.flux.utah.edu/u/joshkunz
