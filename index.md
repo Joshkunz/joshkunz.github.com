@@ -4,14 +4,15 @@
 <div class="clear"></div>
 <div class="prefix_2 grid_8">
 
-## On Other Sites
+## Elsewhere 
 
 [Github][github], 
 [Pinboard][pinboard],
 [last.fm][lastfm],
 [libre.fm][librefm],
 [SoundCloud][soundcloud],
-[MusicBrainz][musicbrainz].
+[MusicBrainz][musicbrainz],
+<josh@kunz.xyz>.
 
 ### With Flux Research Group
 
