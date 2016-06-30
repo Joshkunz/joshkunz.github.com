@@ -2,28 +2,14 @@
 
 MARKDOWN = pandoc
 M4 = m4
-TREE = tree
-
-TREEFLAGS = -s -h --du
-
-ifeq ($(shell uname -s),Darwin)
-    music_base = ~/music/library
-else
-    music_base = ~/music
-endif
-
-music_site = https://music.joshkunz.com/flac
 
 macro_base = macros.m4
-generated = index.html music.html gifts.html
+generated = index.html gifts.html
 
 site: $(generated)
 
 index.html: index.md base.html.m4
 gifts.html: gifts.md base.html.m4
-music.html: $(music_base)
-	$(TREE) $(TREEFLAGS) \
-		-o "$@" -H "$(music_site)" -T "Music Library" $(music_base)
 
 %.html: %.html.m4
 	$(M4) $(macro_base) $< > $@
