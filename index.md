@@ -12,6 +12,7 @@
 [libre.fm][librefm],
 [SoundCloud][soundcloud],
 [MusicBrainz][musicbrainz],
+[Bandcamp][bandcamp],
 <josh@kunz.xyz>.
 
 ### With Flux Research Group
@@ -79,3 +80,5 @@ you can see those projects at the [Flux Group Gitlab][flux-gitlab-me].
 
   [flux]: https://www.flux.utah.edu/index
   [flux-gitlab-me]: https://gitlab.flux.utah.edu/u/joshkunz
+
+  [bandcamp]: https://bandcamp.com/obstack
