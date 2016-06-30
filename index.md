@@ -64,7 +64,7 @@ you can see those projects at the [Flux Group Gitlab][flux-gitlab-me].
   [nfsn]: http://nearlyfreespeech.net/
   [rsync]: https://rsync.samba.org/
 
-  [rss]: http://rss.joshkunz.com/tumblr/dashboard 
+  [rss]: https://tumblr2rss.obstack.net/
   [ashuffle]: https://github.com/Joshkunz/ashuffle
   [nfsn.py]: https://github.com/Joshkunz/nfsn.py
   [pdf2kindle]: https://github.com/Joshkunz/pdf2kindle
