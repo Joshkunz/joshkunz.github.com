@@ -26,6 +26,10 @@ you can see those projects at the [Flux Group Gitlab][flux-gitlab-me].
   RSS feed.
 * __[ashuffle][]__ An awesome sliding-window-based shuffle client for
   [mpd][], my music player of choice. 
+* __[uecron][]__ A cron-like program for executing scripts when device events
+  change. It's a good lightweight alternative when udev is too much trouble
+  or won't work. I originally wrote it to monitor virtual devices in a network
+  namespace.
 * __[nfsn.py][]__ An authentication helper for the [requests][] library
   that implements the authentication protocol for the [NearlyFreeSpeech.Net][nfsn]
   API.
@@ -66,6 +70,7 @@ you can see those projects at the [Flux Group Gitlab][flux-gitlab-me].
 
   [rss]: https://tumblr2rss.obstack.net/
   [ashuffle]: https://github.com/Joshkunz/ashuffle
+  [uecron]: https://github.com/joshkunz/uecron
   [nfsn.py]: https://github.com/Joshkunz/nfsn.py
   [pdf2kindle]: https://github.com/Joshkunz/pdf2kindle
   [fpick]: https://github.com/Joshkunz/fpick
