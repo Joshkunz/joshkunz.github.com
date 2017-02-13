@@ -7,6 +7,7 @@
 ## Elsewhere 
 
 [Github][github], 
+[Blog][blog] (new),
 [Pinboard][pinboard],
 [last.fm][lastfm],
 [libre.fm][librefm],
@@ -56,6 +57,7 @@ you can see those projects at the [Flux Group Gitlab][flux-gitlab-me].
 
 </div>
 
+  [blog]: http://jkz.wtf
   [github]: https://github.com/joshkunz
   [pinboard]: https://pinboard.in/u:joshkunz
   [lastfm]: http://www.last.fm/user/obstack
