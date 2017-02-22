@@ -45,12 +45,12 @@ you can see those projects at the [Flux Group Gitlab][flux-gitlab-me].
 
 ## Other Stuff
 
-* My __[mpd][] File-Access patch__ ([v0.19][mpd_patch_v19], 
+* My __[mpd][] File-Access patch__ ([v.20.x][mpd_patch_v20], [v0.19][mpd_patch_v19], 
   [v0.17-v0.18][mpd_patch_v17])
   that makes it so you can queue `file://*` urls as long as you have read permission
   on the file. Normally MPD tries to intuit what user you are which I believe may
   only work when you actually log-in.
-* A [bittorrent tracker][lua-bt] that could theoretically run on 
+* A __[bittorrent tracker][lua-bt]__ that could theoretically run on 
   [webscript.io](https://webscript.io) but seems to have trouble doing so.
   To build it, I implemented [bencoding](https://en.wikipedia.org/wiki/Bencode)
   in lua. Find it [here](https://gist.github.com/Joshkunz/4e114cd473c64498af5d).
@@ -78,6 +78,7 @@ you can see those projects at the [Flux Group Gitlab][flux-gitlab-me].
   [fpick]: https://github.com/Joshkunz/fpick
   [soundrip]: https://github.com/Joshkunz/soundrip
 
+  [mpd_patch_v20]: https://gist.github.com/joshkunz/5a87e8ba51d7d6088e91c9ec24b8ff60
   [mpd_patch_v19]: https://gist.github.com/Joshkunz/6e922cedb86c76fd1bfe
   [mpd_patch_v17]: https://gist.github.com/Joshkunz/6946483
 
